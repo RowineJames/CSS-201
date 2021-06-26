@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+
+        body {
+
+            background-color:bisque;
+        } 
+
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 10px solid black;
+            margin: 50px auto;
+            position: relative;
+
+        }
+
+        .box::before {
+            content: '';
+            display: block;
+            border: 10px solid red;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            z-index: -1;
+
+        }
+        
+        
+        
+        .box::after {
+            content: '';
+            display: block;
+            border: 10px solid blue;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            z-index: 10;
+
+
+        }
+
+        a {
+
+            text-decoration: none;
+            color: black;
+            position: relative;
+
+        }
+
+        a::before {
+            content: '';
+            width: 100%;
+            height: 4px;
+            background-color: yellow;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        a:hover::before {
+           height: 14px;
+
+        }
+
+        p::first-letter {
+
+            font-size: 50px;
+            float: left;
+            margin: 5px;
+
+
+        }
+
+        p::first-line {
+            font-weight:bold;
+        }
+
+        ::selection {
+            background-color: green;
+            color: white;
+        }
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    
+  
+
+    <div class="box"></div>
+    <hr>
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis tempora, exercitationem maiores, animi officia saepe, <a href="">Give this a border</a>sint numquam blanditiis error officiis est cumque fuga consequuntur voluptas incidunt neque dolores. Maiores, saepe.
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, fuga at nam aut rem ducimus tempore qui. Dolorem temporibus velit odit asperiores dicta quae sit provident id. Quos, facilis odit.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, fuga at nam aut rem ducimus tempore qui. Dolorem temporibus velit odit asperiores dicta quae sit provident id. Quos, facilis odit.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, fuga at nam aut rem ducimus tempore qui. Dolorem temporibus velit odit asperiores dicta quae sit provident id. Quos, facilis odit.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, fuga at nam aut rem ducimus tempore qui. Dolorem temporibus velit odit asperiores dicta quae sit provident id. Quos, facilis odit.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, fuga at nam aut rem ducimus tempore qui. Dolorem temporibus velit odit asperiores dicta quae sit provident id. Quos, facilis odit.
+    </p>
+    
+    
+
+</body>
+</html>
