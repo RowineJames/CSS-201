@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+
+        body {
+        
+        background-color:bisque;
+        } 
+
+
+
+        
+
+        #parent > .box{
+            
+            height: 20px;
+            border: 1px solid blue;
+        }
+
+        #parent .box + .box + .box{
+
+            background-color: red;
+
+        }
+
+    
+
+        #secondparent > .boxsecond{
+
+            height: 20px;
+            border: 1px dashed green;
+
+
+
+        }
+
+        #secondparent .boxsecond ~ .boxsecond {
+
+            background-color: black;
+
+        } 
+
+
+        #thirdparent .boxthird{
+
+            height: 20px;
+            border: 1px solid blue;
+            color: white;
+        }
+
+         .boxthird:not(.dontselectme) {
+
+            background-color: blue;
+
+        }
+
+        .boxthird:hover {
+
+            background-color: gray;
+
+        }
+        .boxthird:nth-child(4) {
+
+            background-color:yellow
+        }
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    
+    <div id="parent">
+
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+
+    <br>
+
+    <div id="secondparent">
+        <div class="boxsecond"></div>
+        <div class="boxsecond"></div>
+        <div class="boxsecond"></div>
+        <div class="boxsecond"></div>
+        <div class="boxsecond"></div>
+        <div class="boxsecond"></div>
+        <div class="boxsecond"></div>
+        <div class="boxsecond"></div>
+        
+        
+
+
+    </div>
+
+    <br>
+
+    <div id="thirdparent">
+        <div class="boxthird"></div>
+        <div class="boxthird"></div>
+        <div class="boxthird"></div>
+        <div class="boxthird">SELECT ME</div>
+        <div class="boxthird"></div>
+        <div class="boxthird dontselectme"></div>
+        <div class="boxthird"></div>
+
+
+    </div>
+</body>
+</html>
