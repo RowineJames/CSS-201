@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Transformations</title>
+    
+
+    <style>
+
+       
+
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 10px solid black;
+            margin: 50px auto;
+
+            /* transform: translate(100px, 100px); */
+
+            /* transform: rotate(45deg); */
+            /* transform: scale(200%); */
+            transform: skew(20deg, 20deg);
+
+
+        }
+
+        .boxtwo {
+            width: 30px;
+            height: 30px;
+            border: 10px solid black;
+            background-color: black;
+            margin: 50px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation-name: slideme;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction:normal;
+
+        }
+
+        /* @keyframes slideme {
+
+            from {
+                top: 0;
+                left: 0;
+
+            }
+            to {
+                left: 100%;
+
+            }
+            
+        }*/
+
+        @keyframes slideme {
+            0%{
+                top: 0;
+                left: 0;
+            }
+            25%{
+                background-color: blue;
+                top: 0;
+                left: 95%;
+
+            }
+
+            50%{
+                background-color: green;
+                top:95%;
+                left: 95%;
+
+            }
+
+            75%{
+                background-color: yellow;
+                top:95%;
+                left: 0;
+            }
+
+            100%{
+                background-color: yellow;
+                top: 0;
+                left:0;
+
+            }
+
+
+            
+            
+        }
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <div class="box">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro voluptatem animi, itaque culpa doloremque repellat necessitatibus doloribus laborum, rem, consectetur eaque alias quaerat sapiente quo nostrum dolor corporis sit ex.
+
+    </div>
+
+    <div class="boxtwo"></div>
+
+
+
+</body>
+
+</html>
