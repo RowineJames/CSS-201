@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="png" href="favicon.png"/>
+
+
+    <style>
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+        * {
+
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+
+        }
+
+        html, body {
+        width: 100%;
+        height: 100%;
+        }
+
+        body {
+
+            background-image: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%),
+            url("https://www.neondystopia.com/wp-content/uploads/2018/04/ndbgprog3.jpg");
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+
+
+
+
+        .headerbox {
+
+
+            border-bottom: 1px solid #d500fb;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            padding: 0px 0px 0px 0px;
+            padding-bottom: 0px;
+            display:flex;
+            position: sticky;
+
+
+        }
+
+        .headertext {
+            padding: 10px;
+            padding-top: 35px;
+            padding-bottom: 0px;
+            font-size: 12px;
+            color: #00e3ef;
+            text-align: center center;
+            white-space: nowrap;
+            height: auto;
+        }
+        .headertexticon {
+            text-align: right center;
+            white-space: nowrap;
+            height: auto;
+            float:right;
+            border: 2px solid #00e3ef00;
+            height: auto;
+            padding: 10px 15px;
+            margin: 0px 5px 0px 0px;
+            border-radius: 4px;
+            color: #00e3ef;
+            display: flex;
+            white-space: nowrap;
+        }
+
+
+        .headertextbox {
+
+            border: 2px solid #00e3ef;
+            color: #00e3ef;
+            font-weight: 550;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            color: #00e3ef;
+
+        }
+
+
+        li { 
+           
+           
+            padding: 5px;
+
+           
+
+        }
+
+        .nopad {
+
+            padding: 0px, 5px, 0px, 0px;
+
+
+
+        }
+
+        .menuitem {
+
+            border: 2px solid #00e3ef;
+            height: auto;
+            padding: 10px 15px;
+            margin: 0px 5px 0px 0px;
+            border-radius: 4px;
+            color: #00e3ef;
+            display: flex;
+            white-space: nowrap;
+
+
+
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+            margin: 0px 30px 0px 30px;
+            position:relative;
+            height: auto;
+
+        }
+
+        .item {
+            border: 1px solid rgb(0, 0, 0);
+            color: red;
+            height: 100%;
+            /* position:absolute; */
+
+        }
+
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+            grid-row-start: 1;
+            grid-row-end:3;
+
+            margin-top: 20px;
+            padding: 10px;
+
+            background-image: url("https://www.neondystopia.com/wp-content/uploads/2021/03/qanondumbshit.jpg");
+
+            width:45vw;
+            height: 70vh;
+
+            background-position: center center;
+            background-size: cover;
+
+
+
+
+
+
+
+        }
+
+
+
+        .item2 {
+
+            background-image: url("https://www.neondystopia.com/wp-content/uploads/2020/12/EavQwZDXgAEzVEL-600x467.png");
+
+            width: 25vw;
+            height: 35vh;
+
+            margin-top: 20px;
+
+            background-position: center center;
+            background-size: cover;
+            display: inline-block;
+        }
+
+        .item3 {
+
+            background-image: url("https://www.neondystopia.com/wp-content/uploads/2021/01/5fed304f962c434906-780x467.jpg");
+
+            width: 25vw;
+            height: 35vh;
+
+            margin-top: 20px;
+
+            background-position: center center;
+            background-size: cover;
+            display: inline-block;
+        }
+
+        .item4 {
+
+            background-image: url("https://www.neondystopia.com/wp-content/uploads/2021/02/robot-2-864x467.jpg");
+
+            width: 25vw;
+            height: 35vh;
+
+
+            background-position: center center;
+            background-size: cover;
+            display: inline-block;
+        }
+
+        .item5 {
+
+            background-image: url("https://www.neondystopia.com/wp-content/uploads/2020/12/capsule_main.png");
+
+            width: 25vw;
+            height: 35vh;
+
+
+
+            background-position: center center;
+            background-size: cover;
+            display: inline-block;
+        }
+
+        .topics {
+
+            
+            border: 2px solid #00e3ef00; 
+            background-color: rgba(0, 0, 0, 0.6);
+            height: auto;
+            padding: 1px 5px;
+            margin: 180px 0px 0px 0px;
+            font-weight: 200;
+            color: #d500fb;
+            white-space: nowrap;
+            display: flex; 
+            line-height: 50%;
+            position: sticky;
+
+
+
+        }
+
+            .topicsside {
+
+                
+            border: 2px solid #00e3ef00; 
+            background-color: rgba(0, 0, 0, 0.6);
+            height: auto;
+            padding: 1px 5px;
+            margin: 75px 0px 0px 0px;
+            font-weight: 200;
+            color: #d500fb;
+            white-space: nowrap;
+            display: flex; 
+            position: sticky;
+
+
+        }
+
+            .topicssideunder {
+
+                
+            border: 2px solid #00e3ef00; 
+            background-color: rgba(0, 0, 0, 0.6);
+            height: auto;
+            padding: 1px 5px;
+            margin: 0px 0px 0px 0px;
+            font-weight: 200;
+            color: #d500fb;
+            white-space: nowrap;
+            display: flex; 
+            position: sticky;
+
+
+        }
+
+            .nopadtext {
+            
+            border: 2px solid #00e3ef00; 
+            background-color: rgba(0, 0, 0, 0.6);
+            height: auto;
+            padding: 1px 5px;
+            margin: 0px 0px 0px 0px;
+            font-weight: 200;
+            color: #d500fb;
+            white-space: nowrap;
+            display: flex; 
+            position: sticky;
+
+
+        }
+
+
+
+            .bigtextbox {
+
+            border: 2px solid #00e3ef00; 
+            background-color: rgba(0, 0, 0, 0.6);
+            height: auto;
+            padding: 5px 5px;
+            margin: 0px 10px 0px 10px;
+            color: #ffffff;
+            font-weight: 200;
+            display: flex;
+            position: sticky;
+
+        }
+
+            .author {
+
+
+            color: #00e3ef;
+            font-weight: 150;
+
+
+
+        }
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+
+    <div class="headerbox">
+
+        <div>
+            <img alt="NeonDystopia" src="https://www.neondystopia.com/wp-content/uploads/2018/04/Neon-Dystopia-Logo200x100-1.png" style="transform: scale(0.8);">
+        </div>
+
+        <div class="headertext">
+            WHAT IS CYBERPUNK?
+        </div>
+        <div class="headertext">
+            CYBERPUNK CLOTHING
+        </div>
+        <div class="headertext">
+            ARTICLES
+        </div>
+        <div class="headertext">
+            DATABASES
+        </div>
+        <div class="headertext">
+            FORUMS
+        </div>
+
+        <ul>
+
+            <li>
+                <h5 class="headertexticon">            
+                    &#128269;
+
+                    &#128100;
+                </h5>
+
+            </li>
+            <li>
+                <h5 class="menuitem">REGISTER</h5>
+            </li>
+            <li>
+                <h5 class="menuitem">SOCIAL</h5>
+            </li>
+            <li>
+                <h5 class="menuitem">SHOP</h5>
+            </li>
+            <li>
+                <h5 class="menuitem">SUPPORT US</h3>
+            </li>
+
+
+        </ul>
+
+
+    </div>
+
+    <div id="grid">
+
+        <div class=" item item1">
+
+            <ul>
+
+                <li>
+                    <h6 class="topics">FEATURED</h6>
+    
+                </li>
+                <li>
+                    <h6 class="topics"> POLITICS AND PHILOSOPHY</h6>
+                </li>
+            </ul>
+            <h1 class="bigtextbox">Alternate realities in the every day: extremism, the internet, and the death of truth</h1>
+
+            <h5 class="author">John Farrell - March 20 2021</h5>
+
+        </div>
+
+        <div class=" item item2">
+
+            <ul>
+
+                <li>
+                    <h6 class="topicsside">CYBERPUNK GAMES</h6>
+    
+                </li>
+            </ul>
+            <h3 class="bigtextbox">Boss Rush: Cloudpunk</h3>
+
+
+
+
+        </div>
+
+        <div class=" item item3">
+
+            <ul>
+
+                <li>
+                    <h6 class="topicsside">BOOKS AND FICTION</h6>
+    
+                </li>
+
+            </ul>
+            <h3 class="bigtextbox">Greek Punk- a Review of a Cyberblade: City of Five Skies</h3>
+
+
+
+        </div>
+
+        <div class=" item item4">
+
+            <ul>
+
+                <li>
+                    <h6 class="topicssideunder">FEATURED</h6>
+    
+                </li>
+                <li>
+                    <h6 class="topicssideunder">MOVIES AND ANIME</h6>
+                </li>
+
+            </ul>
+
+            <ul>
+                <li class= "nopad">
+                    <h6 class="nopadtext"> POLITICS AND PHILOSOPHY</h6>
+                </li>
+            </ul>
+            <h3 class="bigtextbox">Nowpunk, Mr Robot & the Importance of Representation in Cyberpunk</h3>
+
+
+
+        </div>
+
+        <div class=" item item5">
+
+            <ul>
+
+                <li>
+                    <h6 class="topicsside">CYBERPUNK GAMES</h6>
+    
+                </li>
+            </ul>
+            <h3 class="bigtextbox">Boss Rush: Until I have You</h3>
+
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
